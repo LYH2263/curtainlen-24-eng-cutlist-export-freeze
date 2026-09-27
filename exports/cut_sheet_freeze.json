@@ -1,0 +1,50 @@
+{
+  "content_checksum": "sha256:774bd32f2bbf2a5823b4d8aba6dbf8adcd0aec8e2463463ef6a38c25d8605cbb",
+  "cut_height": 2.85,
+  "fabric_name": "遮光1.4m",
+  "lines": [
+    {
+      "cut_height": 2.85,
+      "kind": "panel",
+      "meters": 2.85,
+      "seq": 1
+    },
+    {
+      "cut_height": 2.85,
+      "kind": "panel",
+      "meters": 2.85,
+      "seq": 2
+    },
+    {
+      "cut_height": 2.85,
+      "kind": "panel",
+      "meters": 2.85,
+      "seq": 3
+    },
+    {
+      "cut_height": 2.85,
+      "kind": "panel",
+      "meters": 2.85,
+      "seq": 4
+    },
+    {
+      "cut_height": 2.85,
+      "kind": "panel",
+      "meters": 2.85,
+      "seq": 5
+    }
+  ],
+  "meters": 14.25,
+  "panels": 5,
+  "schema": "cut-sheet/v1",
+  "source": {
+    "fabric_id": 1,
+    "run_id": 1,
+    "window_id": 1
+  },
+  "totals": {
+    "meters": 14.25,
+    "panels": 5
+  },
+  "window_name": "客厅落地窗"
+}
