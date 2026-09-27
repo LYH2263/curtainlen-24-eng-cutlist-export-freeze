@@ -7,6 +7,7 @@ def init_db():
     CREATE TABLE IF NOT EXISTS fabrics(id INTEGER PRIMARY KEY,name TEXT,fabric_width REAL,hem_top REAL,hem_bottom REAL,data_quality TEXT,note TEXT);
     CREATE TABLE IF NOT EXISTS settings(key TEXT PRIMARY KEY,value TEXT);
     CREATE TABLE IF NOT EXISTS calc_runs(id INTEGER PRIMARY KEY AUTOINCREMENT,window_id INT,fabric_id INT,result_json TEXT,note TEXT,created_at TEXT);
+    CREATE TABLE IF NOT EXISTS cut_sheet_orders(id INTEGER PRIMARY KEY AUTOINCREMENT,run_id INT,path TEXT,checksum TEXT,created_at TEXT);
     """)
     if c.execute("SELECT COUNT(*) c FROM windows").fetchone()["c"] == 0:
         c.executemany("INSERT INTO windows(name,width,height,fullness,data_quality,note) VALUES (?,?,?,?,?,?)",[
